@@ -1,0 +1,35 @@
+import time
+class Stack:
+    def __init__(self):
+        self.items = []
+    def isEmpty (self):
+        return self.items == []
+    def push (self,item):
+        self.items.append(item)
+    def pop (self):
+        return self.items.pop()
+    def peek (self):
+        return self.items[len(self.items)-l]
+    def size (self):
+        return len(self.items)
+    def dispaly (self):
+        return (self.items)
+    
+    s=Stack()
+    start=time.time()
+    print(s.isEmpty())
+    print("push operations")
+    s.push(10)
+    s.push(20)
+    s.push(30)
+    print("size:",s.size)
+    print(s.display())
+    print("peek",s.peek)
+    print("pop operations")
+    print(s.pop())
+    print(s.pop())
+    print(s.dispaly())
+    print("size:",s.size)
+    end=time.time()
+    print("Runtime of the program is",end-start)
+    
