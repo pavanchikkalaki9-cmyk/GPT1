@@ -1,5 +1,4 @@
 import matplotlib.pyplot as plt
-
 def selectionSort(array):
     n = len(array)
     for i in range(n):
